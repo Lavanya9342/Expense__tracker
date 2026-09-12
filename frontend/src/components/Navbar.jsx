@@ -93,6 +93,9 @@ export default function Navbar() {
             <Link to="/budget" onClick={() => setIsMobileMenuOpen(false)} className={mobileLinkClass('/budget')}>
               <Target size={18} /> Budget
             </Link>
+            <Link to="/goals" onClick={() => setIsMobileMenuOpen(false)} className={mobileLinkClass('/goals')}>
+              <PiggyBank size={18} /> Goals
+            </Link>
             <Link to="/profile" onClick={() => setIsMobileMenuOpen(false)} className={mobileLinkClass('/profile')}>
               <UserCircle size={18} /> Profile
             </Link>
