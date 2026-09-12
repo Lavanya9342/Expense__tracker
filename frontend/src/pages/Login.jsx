@@ -57,10 +57,11 @@ export default function Login() {
             <button type="submit" disabled={isSubmitting} className="auth-btn">
               {isSubmitting ? 'Loading...' : 'Login'}
             </button>
-             <div className="login-top">
+           
+          </form>
+            <div className="login-top">
           <Link to="/register">Sign up</Link>
         </div>
-          </form>
         </div>
       </div>
     </div>
