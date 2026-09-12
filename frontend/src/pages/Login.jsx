@@ -29,7 +29,9 @@ export default function Login() {
     <div className="auth-page">
       <div className="auth-box">
         {/* Top Purple Section */}
-       
+        <div className="login-top">
+          <Link to="/register">Sign up</Link>
+        </div>
         
         {/* Bottom White Curve Section */}
         <div className="login-bottom">
@@ -57,11 +59,7 @@ export default function Login() {
             <button type="submit" disabled={isSubmitting} className="auth-btn">
               {isSubmitting ? 'Loading...' : 'Login'}
             </button>
-           
           </form>
-            <div className="login-top">
-          <Link to="/register">Sign up</Link>
-        </div>
         </div>
       </div>
     </div>
