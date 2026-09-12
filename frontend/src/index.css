@@ -1191,27 +1191,3 @@ body {
 .btn-goal-delete:hover {
   color: #b91c1c;
 }
-.welcome-text {
-  color: white;
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.signup-prompt {
-  margin-top: 25px;
-  font-size: 0.95rem;
-  color: #6b7280;
-}
-
-.signup-link {
-  color: #4c328a; /* Deep purple */
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.signup-link:hover {
-  color: #2b1b54; /* Darker purple on hover */
-  text-decoration: underline;
-}
