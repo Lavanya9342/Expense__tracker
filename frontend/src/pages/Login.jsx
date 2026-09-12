@@ -25,51 +25,42 @@ export default function Login() {
     }
   };
 
-return (
+  return (
     <div className="auth-page">
       <div className="auth-box">
-        {/* Top Section - Professional Welcome Message instead of Link */}
-        <div className="login-top">
-          <h2 style={{ color: 'white', margin: 0, fontSize: '1.5rem', fontWeight: '700' }}>
-            Welcome Back
-          </h2>
-        </div>
-
-        {/* Bottom Section - Form & Sign Up Link */}
+        {/* Top Purple Section */}
+       
+        
+        {/* Bottom White Curve Section */}
         <div className="login-bottom">
           <h2 className="login-title">Login</h2>
           
-          <form onSubmit={handleSubmit}> {/* Unga submit function name use pannikonga */}
-            <input 
-              type="email" 
-              name="email"
-              placeholder="Email" 
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              required
+              placeholder="Email"
               className="auth-input"
-              value={formData.email} // Unga state variables-ah match pannikonga
-              onChange={handleChange}
-              required 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <input 
-              type="password" 
-              name="password"
-              placeholder="Password" 
+            
+            <input
+              type="password"
+              required
+              placeholder="Password"
               className="auth-input"
-              value={formData.password}
-              onChange={handleChange}
-              required 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit" className="auth-btn">
-              Login
-            </button>
-          </form>
 
-          {/* New Sign Up Section at the Bottom */}
-          <div style={{ marginTop: '25px', fontSize: '0.95rem', color: '#6b7280' }}>
-            Don't have an account?{' '}
-            <Link to="/register" style={{ color: '#4c328a', fontWeight: '700', textDecoration: 'none' }}>
-              Sign up
-            </Link>
-          </div>
+            <button type="submit" disabled={isSubmitting} className="auth-btn">
+              {isSubmitting ? 'Loading...' : 'Login'}
+            </button>
+             <div className="login-top">
+          <Link to="/register">Sign up</Link>
+        </div>
+          </form>
         </div>
       </div>
     </div>
