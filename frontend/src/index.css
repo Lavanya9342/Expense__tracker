@@ -48,7 +48,7 @@ body {
 }
 
 .login-bottom {
-  background-color:#37236b ;
+  background-color: white;
   padding: 40px 30px 50px;
   border-radius: 40px 40px 0 0; /* The curve */
   text-align: center;
